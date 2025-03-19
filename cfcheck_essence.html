@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Essence DLC">
+    <meta property="og:description" content="Испытайте новое измерение Minecraft с нашим премиальным DLC: улучшенная производительность, потрясающая графика и незабываемый игровой опыт!.">
+    <meta property="og:image" content="https://raw.githubusercontent.com/drimixprivet/sk3dlauncher-v3/refs/heads/main/essence.png">
+    <meta property="og:url" content="https://essenceclient.fun/authorization">
+    <title>Проверка</title>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            let el = document.querySelector(".domain-name");
+            if (el) {
+                el.innerHTML = window.location.hostname;
+            }
+        });
+    </script>
+
+    <style>
+        * {
+            margin: 0px;
+        }
+
+        body {
+            background-color: #0a0a0a;
+        }
+
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            color: aliceblue;
+        }
+
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(133, 133, 133);
+            margin-bottom: 20px;
+            margin-top: 0%;
+        }
+
+        a {
+            text-decoration: none;
+            color: #df911c;
+        }
+
+        footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 15px;
+
+            p {
+                font-size: 14px;
+                margin-bottom: 5px;
+            }
+        }
+
+        #center-container {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        #captcha-container {
+            margin-bottom: 40px;
+        }
+
+        .loader {
+            animation: 6s infinite loading-anim ease-in;
+        }
+
+        @keyframes loading-anim {
+            0% {
+                transform: scale(1.2)
+            }
+
+            100% {
+                transform: scale(1.0)
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="center-container">
+        <img class="loader" src="https://raw.githubusercontent.com/drimixprivet/sk3dlauncher-v3/refs/heads/main/essence.png" style="border-radius: 50%;" width="200">
+        <h1 class="domain-name">sk3dguard</h1>
+        <p>Проверяет ваше подключение, пожалуйста, подождите...</p>
+        <p style="color: white;">::CAPTCHA_BOX::</p>
+    </div>
+
+    <footer>
+        <p>© 2022-2025 Sk3dGuard, Secured && Powered by <a href="https://cloudflare.com/">CloudFlare</a></p>
+    </footer>
+</body>
+</html>
